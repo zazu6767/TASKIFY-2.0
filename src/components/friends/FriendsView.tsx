@@ -97,7 +97,7 @@ export const FriendsView: React.FC = () => {
             value={usernameInput}
             onChange={(e) => setUsernameInput(e.target.value)}
             placeholder="Enter buddy username or email (e.g. @kai_builds, sam@example.com)..."
-            className="flex-1 text-xs px-3.5 py-2.5 bg-slate-50 dark:bg-slate-750 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="flex-1 text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-500 font-medium focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
           <button
             type="submit"
@@ -139,7 +139,9 @@ export const FriendsView: React.FC = () => {
                     <div className="font-bold text-slate-900 dark:text-white">
                       {req.fromUserName}
                     </div>
-                    <div className="text-[11px] text-slate-400">{req.fromUserHandle} · {req.sentAt}</div>
+                    <div className="text-xs text-slate-600 dark:text-slate-300 font-medium font-mono">
+                      {req.fromUserHandle} · {req.sentAt}
+                    </div>
                   </div>
                 </div>
 
@@ -200,7 +202,9 @@ export const FriendsView: React.FC = () => {
                       <h4 className="text-sm font-bold text-slate-900 dark:text-white">
                         {buddy.displayName}
                       </h4>
-                      <div className="text-xs text-slate-400">@{buddy.username}</div>
+                      <div className="text-xs font-semibold text-slate-600 dark:text-slate-300 font-mono">
+                        @{buddy.username}
+                      </div>
                     </div>
                   </div>
 

@@ -154,7 +154,7 @@ export const SettingsView: React.FC = () => {
                 required
                 value={displayName}
                 onChange={(e) => setDisplayName(e.target.value)}
-                className="w-full text-xs px-3.5 py-2.5 bg-slate-50 dark:bg-slate-750 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 font-medium"
               />
             </div>
 
@@ -167,7 +167,7 @@ export const SettingsView: React.FC = () => {
                 required
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="w-full text-xs px-3.5 py-2.5 bg-slate-50 dark:bg-slate-750 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 font-medium"
               />
             </div>
           </div>
@@ -181,7 +181,7 @@ export const SettingsView: React.FC = () => {
               type="text"
               value={bio}
               onChange={(e) => setBio(e.target.value)}
-              className="w-full text-xs px-3.5 py-2.5 bg-slate-50 dark:bg-slate-750 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+              className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 font-medium"
             />
           </div>
 
@@ -194,7 +194,7 @@ export const SettingsView: React.FC = () => {
               <select
                 value={status}
                 onChange={(e) => setStatus(e.target.value as UserStatus)}
-                className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-750 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500 font-medium"
               >
                 <option value="online">🟢 Online & Ready to chat</option>
                 <option value="focusing">🎧 Focusing Silently (Do Not Disturb)</option>
@@ -212,7 +212,7 @@ export const SettingsView: React.FC = () => {
                 value={currentFocusTask}
                 onChange={(e) => setCurrentFocusTask(e.target.value)}
                 placeholder="e.g. Drafting Kyoto itinerary"
-                className="w-full text-xs px-3.5 py-2 bg-slate-50 dark:bg-slate-750 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 font-medium"
               />
             </div>
           </div>

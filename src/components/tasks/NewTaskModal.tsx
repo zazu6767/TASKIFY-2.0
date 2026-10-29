@@ -93,7 +93,7 @@ export const NewTaskModal: React.FC<NewTaskModalProps> = ({ onClose }) => {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="e.g. Research Machiya guesthouse in Kyoto"
-              className="w-full text-sm px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full text-sm px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-500 font-medium focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
@@ -107,7 +107,7 @@ export const NewTaskModal: React.FC<NewTaskModalProps> = ({ onClose }) => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Add details, links, or notes for your buddies..."
-              className="w-full text-xs p-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full text-xs p-3 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-500 font-medium focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
@@ -120,7 +120,7 @@ export const NewTaskModal: React.FC<NewTaskModalProps> = ({ onClose }) => {
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value as TaskCategory)}
-                className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium"
               >
                 <option value="Personal">Personal</option>
                 <option value="Study">Study</option>
@@ -138,7 +138,7 @@ export const NewTaskModal: React.FC<NewTaskModalProps> = ({ onClose }) => {
               <select
                 value={groupId}
                 onChange={(e) => setGroupId(e.target.value)}
-                className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium"
               >
                 <option value="">Personal (No group)</option>
                 {groups.map((g) => (
@@ -181,7 +181,7 @@ export const NewTaskModal: React.FC<NewTaskModalProps> = ({ onClose }) => {
               <select
                 value={recurring}
                 onChange={(e) => setRecurring(e.target.value as 'none' | 'daily' | 'weekly')}
-                className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium"
               >
                 <option value="none">Does not repeat</option>
                 <option value="daily">Daily Habit</option>
@@ -200,7 +200,7 @@ export const NewTaskModal: React.FC<NewTaskModalProps> = ({ onClose }) => {
                 type="date"
                 value={dueDate}
                 onChange={(e) => setDueDate(e.target.value)}
-                className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium"
               />
             </div>
 
@@ -212,7 +212,7 @@ export const NewTaskModal: React.FC<NewTaskModalProps> = ({ onClose }) => {
                 type="time"
                 value={dueTime}
                 onChange={(e) => setDueTime(e.target.value)}
-                className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                className="w-full text-xs px-3 py-2 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium"
               />
             </div>
           </div>

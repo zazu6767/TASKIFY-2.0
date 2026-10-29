@@ -292,7 +292,7 @@ export const GroupsView: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Kyoto Trip, Hackathon Squad, Reading Club"
-                  className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                  className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium placeholder:text-slate-500"
                 />
               </div>
 
@@ -305,7 +305,7 @@ export const GroupsView: React.FC = () => {
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="What is this space for?"
-                  className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                  className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium placeholder:text-slate-500"
                 />
               </div>
 
@@ -339,7 +339,7 @@ export const GroupsView: React.FC = () => {
                     value={questTitle}
                     onChange={(e) => setQuestTitle(e.target.value)}
                     placeholder="e.g. Complete 10 trip bookings"
-                    className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                    className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium placeholder:text-slate-500"
                   />
                 </div>
                 <div>
@@ -352,7 +352,7 @@ export const GroupsView: React.FC = () => {
                     max={50}
                     value={questTarget}
                     onChange={(e) => setQuestTarget(Number(e.target.value))}
-                    className="w-full text-xs px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white"
+                    className="w-full text-xs px-3.5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl text-slate-900 dark:text-white font-medium"
                   />
                 </div>
               </div>
