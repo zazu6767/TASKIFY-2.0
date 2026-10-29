@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #faf9f6;
+    color: #1e293b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Theme variations */
+.theme-sunset {
+  --accent-primary: #f97316;
+  --accent-secondary: #fb7185;
+  --accent-soft: #ffedd5;
+  --accent-ring: rgba(249, 115, 22, 0.25);
+}
+
+.theme-mint {
+  --accent-primary: #10b981;
+  --accent-secondary: #06b6d4;
+  --accent-soft: #d1fae5;
+  --accent-ring: rgba(16, 185, 129, 0.25);
+}
+
+.theme-lavender {
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #ec4899;
+  --accent-soft: #ede9fe;
+  --accent-ring: rgba(139, 92, 246, 0.25);
+}
+
+.theme-sunny {
+  --accent-primary: #f59e0b;
+  --accent-secondary: #ea580c;
+  --accent-soft: #fef3c7;
+  --accent-ring: rgba(245, 158, 11, 0.25);
+}
+
+.theme-dark {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+  --accent-primary: #38bdf8;
+  --accent-secondary: #a855f7;
+  --accent-soft: #1e293b;
+  --accent-ring: rgba(56, 189, 248, 0.25);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.55);
+}
+
+/* Pulse animation for active voice/video */
+@keyframes voice-wave {
+  0%, 100% { height: 6px; }
+  50% { height: 24px; }
+}
+
+.animate-voice-wave {
+  animation: voice-wave 1s ease-in-out infinite;
+}
